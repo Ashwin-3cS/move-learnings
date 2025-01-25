@@ -6,6 +6,13 @@ module test_world::PractiseFile {
         MY_ADDRESS
     }
 
-    
+    public fun is_zero(num:u64):bool {
+        if(num == 0){
+            return true
+        }else {
+            return false
+        }
+    }
+  
 
 }
