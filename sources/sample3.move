@@ -11,4 +11,10 @@ module test_world::two {
         let result = one::get_value();
         result
     }
+
+    #[view]
+    public fun get_value_two_view(): u64 {
+        let result = one::get_value();
+        result
+    }
 }

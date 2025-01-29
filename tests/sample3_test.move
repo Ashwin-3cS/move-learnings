@@ -20,4 +20,11 @@ module test_world::test {
         print(&utf8(message));
         print(&result);
     }
+    #[test]
+    fun test_view(){
+        let result = get_value_two_fun();
+        let message = b"just a successful message from sample3_test_view";
+        print(&utf8(message));
+        print(&result);
+    }
 }
