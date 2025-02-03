@@ -26,5 +26,5 @@ module test_world::test {
         let message = b"just a successful message from sample3_test_view";
         print(&utf8(message));
         print(&result);
-    }
+    } 
 }
