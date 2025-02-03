@@ -6,6 +6,7 @@ module test_world::Sample4Code {
             var = var + 1;
             counter = counter + 1;
         };
+        
         var
     }
 }
