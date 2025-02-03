@@ -1,9 +1,10 @@
-module test_world::Sample4Code {
-     fun while_loop(arg:u64):u64 {
+module test_world::Sample4Code { //for loop is not present in move language 
+     public fun while_loop(argu:u64):u64 {
         let mut var = 0 ;
-        while(arg <= 10){
-            var = 1;
+        while(argu <= 10){
+            
         };
         var
+        
      }
 }
