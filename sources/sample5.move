@@ -14,7 +14,7 @@ module test_world::Sample5Code {
     }
 
     public fun assert_error_handling(): String {
-        let value = 4;
+        let value = 101;
         // Assert will abort with the given code if condition is false
         assert!(value > 0, 402); // Custom error code 402
         
@@ -22,7 +22,7 @@ module test_world::Sample5Code {
         print(&message);
         
         // Additional validation
-        assert!(value < 100, 403); // Another custom error code
+        assert!(value < 100, 403); // Another custom error code // it will revert a error (more than 101)
         
         message
     }
