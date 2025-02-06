@@ -12,4 +12,18 @@ module test_world::Sample5Code {
             abort 401
         }
     }
+
+    public fun assert_error_handling(): String {
+        let value = 4;
+        // Assert will abort with the given code if condition is false
+        assert!(value > 0, 402); // Custom error code 402
+        
+        let message = utf8(b"valid value");
+        print(&message);
+        
+        // Additional validation
+        assert!(value < 100, 403); // Another custom error code
+        
+        message
+    }
 }
