@@ -4,8 +4,6 @@ module test_world :: sample6{
         let a = num ;
         print(&a);
         (a as u16)
-        
-
     }
 
 }
