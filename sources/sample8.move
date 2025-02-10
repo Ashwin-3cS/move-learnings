@@ -1,7 +1,7 @@
 module test_world :: sample8 {
     use std :: string :: String;
     use std :: debug :: print;
-    public struct User {
+    public struct User has drop  {
         name : String ,
         middle_name : Option<String>
 
