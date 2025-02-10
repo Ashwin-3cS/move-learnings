@@ -21,6 +21,8 @@ module test_world :: sample8 {
     public fun get_name (user: &User) : String {
         user.name
     }
+    // Reference & =>  this is called borrowing only read and no modification 
+    // Mutable Reference =>  &mut user  They can look AND modify it, but must return it
 
     // use the below method while writing (creates a copy of option and so we can edit it out)
     //  public fun middle_name (user: &User) : Option<String> {
