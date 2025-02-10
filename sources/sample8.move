@@ -26,6 +26,9 @@ module test_world :: sample8 {
     //  public fun middle_name (user: &User) : Option<String> {
     //     *&user.middle_name
     // }
+    // 1. &user - reference to User struct
+    // 2. &user.middle_name - gets reference to the Option inside User
+    // 3. *&user.middle_name - dereferences (*) the reference (&) to create a copy
 
     public fun middle_name (user: &User) : &Option<String> {
         &user.middle_name
