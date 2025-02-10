@@ -24,14 +24,11 @@ module test_world :: sample8 {
 
     // use the below method while writing (creates a copy of option and so we can edit it out)
     //  public fun middle_name (user: &User) : Option<String> {
-    //     &user.middle_name
+    //     *&user.middle_name
     // }
 
     public fun middle_name (user: &User) : &Option<String> {
         &user.middle_name
-    } // just for reading ; user -> referes to the address of the User struct right and returns the value Option just referring to the Option though
-
-    
-
+    } // just for reading ; user -> refers to the address of the User struct right and returns the value Option just referring to the Option though
 
 }
