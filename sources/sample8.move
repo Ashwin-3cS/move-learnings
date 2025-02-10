@@ -1,6 +1,5 @@
 module test_world :: sample8 {
     use std :: string :: String;
-    use std :: option;
     use std :: debug :: print;
     public struct User {
         name : String ,
@@ -12,4 +11,11 @@ module test_world :: sample8 {
         print(&user);
         user
     }
+
+    public fun optionInMove_wihtoutmiddleName (name : String ) : User {
+        let user: User = User {name , middle_name:option::none()};
+        print(&user);
+        user
+
+    } 
 }
